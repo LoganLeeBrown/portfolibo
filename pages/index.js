@@ -8,18 +8,18 @@ import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
-import web3 from "../public/web2.png";
-import web4 from "../public/web3.png";
-import web5 from "../public/web4.png";
-import web6 from "../public/web5.png";
-import web2 from "../public/web6.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
 import { useState } from "react";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -41,14 +41,14 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href="Resume"
                 >
                   Resume
                 </a>
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-10 shadow rounded-xl">
             <h2 className="text-5xl text-transparent bg-clip-text py-3 bg-gradient-to-t from-teal-600 to-gray-300 font-medium md:text-6xl dark:from-teal-300 dark:to-white">
               Logan Brown
             </h2>
@@ -66,7 +66,7 @@ export default function Home() {
             </Link>
             <AiFillYoutube />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 md:h-96 md:w-96 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mb-10 md:h-96 md:w-96 overflow-hidden">
             <Image
               src={avatar}
               layout="fill"
@@ -132,65 +132,18 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-                alt="meaningful"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-                alt="meaningful"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-                alt="meaningful"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-                alt="meaningful"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-                alt="meaningful"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-                alt="meaningful"
-              />
+            <div className="basis-1/3 flex-1 relative">
+              <Link href="https://chirp-ten-henna.vercel.app/">
+                <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 rounded-lg"></div>
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web1}
+                  alt="meaningful"
+                />
+              </Link>
             </div>
           </div>
         </section>
