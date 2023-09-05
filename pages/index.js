@@ -4,7 +4,7 @@ import { VscColorMode } from "react-icons/vsc";
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import Image from "next/image";
 import avatar from "../public/avatar.jpg";
-import design from "../public/design.png";
+import OCLogo from "../public/OC_logo.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
@@ -54,7 +54,10 @@ export default function Home() {
             </h2>
             <h3 className="text-2xl md:text-3xl py-2">Full Stack Developer</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
-              flavor text.
+              I am a creative software engineer with multiple years of
+              experience in industry leading software environments. I like to
+              build creative and powerful products that improve the user
+              experience.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300">
@@ -78,24 +81,33 @@ export default function Home() {
 
         <section className="px-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              LLORUM IPSUM
+              As an engineer I am led by curiosity. I jumped into the healthcare
+              software industry with the goal of helping the public in an area
+              where they needed it most. Outside of the 9-5 I continue to
+              develop my skills by learning every piece of technology that
+              catches my eye.
             </p>
           </div>
           <div className="lg:flex gap-10 lg:justify-center">
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={design} width={100} height={100} alt="meaningful" />
+            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white basis-1/3">
+              <Image src={OCLogo} alt="meaningful" objectFit="contain" />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Industry Experience
               </h3>
-              <p className="py-2">Llorum Llorum yououoiujiuouiouoiuojo</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">one</p>
-              <p className="text-gray-800 py-1">two</p>
-              <p className="text-gray-800 py-1">three</p>
+              <p className="py-2">
+                Back-End REST layer development on industry leading Electronic
+                Health Record provider.
+              </p>
+              <h4 className="py-4 text-teal-600">Tools Used</h4>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Jax-RS</p>
+              <p className="text-gray-800 py-1">Maven</p>
+              <p className="text-gray-800 py-1">Oracle DB</p>
+              <p className="text-gray-800 py-1">Git</p>
             </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white basis-1/3">
               <Image src={code} width={100} height={100} alt="meaningful" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
@@ -106,7 +118,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">two</p>
               <p className="text-gray-800 py-1">three</p>
             </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white basis-1/3">
               <Image
                 src={consulting}
                 width={100}
