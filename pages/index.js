@@ -92,7 +92,9 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10 lg:justify-center">
             <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white basis-1/3">
-              <Image src={OCLogo} alt="meaningful" objectFit="contain" />
+              <div className="mx-auto h-20 overflow-hidden">
+                <Image src={OCLogo} alt="meaningful" objectFit="contain" />
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Industry Experience
               </h3>
@@ -101,30 +103,31 @@ export default function Home() {
                 Health Record provider.
               </p>
               <h4 className="py-4 text-teal-600">Tools Used</h4>
-              <p className="text-gray-800 py-1">Java</p>
-              <p className="text-gray-800 py-1">Jax-RS</p>
-              <p className="text-gray-800 py-1">Maven</p>
-              <p className="text-gray-800 py-1">Oracle DB</p>
-              <p className="text-gray-800 py-1">Git</p>
+              <p className="text-gray-800 py-1">
+                Java, Jax-RS, Maven, Oracle DB, Git
+              </p>
             </div>
             <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white basis-1/3">
-              <Image src={code} width={100} height={100} alt="meaningful" />
+              <div className="mx-auto h-20 w-20 overflow-hidden">
+                <Image src={code} objectFit="contain" alt="meaningful" />
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Personal Projects
               </h3>
-              <p className="py-2">Llorum Llorum yououoiujiuouiouoiuojo</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">one</p>
-              <p className="text-gray-800 py-1">two</p>
-              <p className="text-gray-800 py-1">three</p>
+              <p className="py-2">
+                The best way to learn a new technology is to build something
+                with it. I like to build projects on my own using technology
+                that interests me.
+              </p>
+              <h4 className="py-4 text-teal-600">Tools used</h4>
+              <p className="text-gray-800 py-1">
+                Typescript, Javascript, React, Vercel, Clerk
+              </p>
             </div>
             <div className="text-center shadow-xl p-10 rounded-xl my-10 dark:bg-white basis-1/3">
-              <Image
-                src={consulting}
-                width={100}
-                height={100}
-                alt="meaningful"
-              />
+              <div className="mx-auto h-20 w-20 overflow-hidden">
+                <Image src={consulting} objectFit="contain" alt="meaningful" />
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
               </h3>
