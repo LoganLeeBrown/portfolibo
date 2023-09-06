@@ -23,10 +23,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <section className="bg-[#3FEEE6] py-2">
+        <section className="bg-[#3FEEE6] dark:bg-[#0B0C10] py-2">
           <nav className="py-10 px-5 mb-12 flex justify-between">
-            <h1 className="text-xl">Early Portfolio Alpha</h1>
-            <ul className="flex items-center">
+            <h1 className="text-xl dark:text-white">Early Portfolio Alpha</h1>
+            <ul className="flex items-center dark:text-white">
               <li>
                 <VscColorMode
                   onClick={() => setDarkMode(!darkMode)}
@@ -43,12 +43,14 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 m-10 shadow-xl rounded-xl bg-[#97CAEF]">
-            <h2 className="text-5xl py-3 bg-gradient-to-t font-medium md:text-6xl">
+          <div className="text-left p-10 m-10 shadow-xl rounded-xl bg-[#97CAEF] dark:bg-[#45A29E]">
+            <h2 className="text-5xl py-3 text-[#CAFAFE] bg:text-[#66FCF1] font-extrabold md:text-6xl">
               Logan Brown
             </h2>
-            <h3 className="text-2xl md:text-3xl py-2">Full Stack Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
+            <h3 className="text-2xl font-bold md:text-3xl py-2">
+              Full Stack Developer
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg">
               I am a creative software engineer with multiple years of
               experience in industry leading software environments. I like to
               build creative and powerful products that improve the user
@@ -73,7 +75,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-10 bg-[#55BCC9] py-96">
+        <section className="px-10 bg-[#55BCC9] dark:bg-[#1F2833] py-96">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
@@ -134,14 +136,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-10 bg-[#CAFAFE] py-96">
+        <section className="px-10 bg-[#CAFAFE] dark:bg-[#C5C6C7] py-96">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">
               &lt;PersonalProjects&gt;
             </h3>
-            <p className="py-2 dark:text-gray-300">
-              Llorum Llorum yououoiujiuouiouoiuojo
-            </p>
+            <p className="py-2 ">Llorum Llorum yououoiujiuouiouoiuojo</p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap sm:flex-1">
             <div className="basis-1/3 relative">
