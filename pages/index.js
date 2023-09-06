@@ -154,7 +154,6 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white">
               &lt;PersonalProjects&gt;
             </h3>
-            <p className="py-2 ">Llorum Llorum yououoiujiuouiouoiuojo</p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap sm:flex-1">
             <div className="basis-1/3 relative">
