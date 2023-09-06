@@ -6,7 +6,7 @@ import Image from "next/image";
 import avatar from "../public/avatar.jpg";
 import OCLogo from "../public/OC_logo.png";
 import code from "../public/code.png";
-import consulting from "../public/consulting.png";
+import universityArkansas from "../public/UniversityArkansasLogo.png";
 import web1 from "../public/web1.png";
 import { useState } from "react";
 import Link from "next/link";
@@ -87,51 +87,64 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10 lg:justify-center">
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
-              <div className="mx-auto h-20 overflow-hidden">
+            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
+              <div className="mx-auto basis-1/3">
                 <Image src={OCLogo} alt="meaningful" objectFit="contain" />
               </div>
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Industry Experience
-              </h3>
-              <p className="py-2">
-                Back-End REST layer development on industry leading Electronic
-                Health Record provider.
-              </p>
-              <h4 className="py-4 text-teal-600">Tools Used</h4>
-              <p className="text-gray-800 py-1">
-                Java, Jax-RS, Maven, Oracle DB, Git
-              </p>
+              <div className="basis-1/3">
+                <h3 className="text-lg font-medium pt-8 pb-2">
+                  Industry Experience
+                </h3>
+                <p className="py-2">
+                  Back-End REST layer development on industry leading Electronic
+                  Health Record provider.
+                </p>
+              </div>
+              <div className="basis-1/3">
+                <h4 className="py-4 text-teal-600">Tools Used</h4>
+                <p className="text-gray-800 py-1">
+                  Java, Jax-RS, Maven, Oracle DB, Git
+                </p>
+              </div>
             </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
-              <div className="mx-auto h-20 w-20 overflow-hidden">
+            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
+              <div className="basis-1/3">
                 <Image src={code} objectFit="contain" alt="meaningful" />
               </div>
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Personal Projects
-              </h3>
-              <p className="py-2">
-                The best way to learn a new technology is to build something
-                with it. I like to build projects on my own using technology
-                that interests me.
-              </p>
-              <h4 className="py-4 text-teal-600">Tools used</h4>
-              <p className="text-gray-800 py-1">
-                Typescript, Javascript, NextJs, React, Vercel, Clerk
-              </p>
-            </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
-              <div className="mx-auto h-20 w-20 overflow-hidden">
-                <Image src={consulting} objectFit="contain" alt="meaningful" />
+              <div className="basis-1/3">
+                <h3 className="text-lg font-medium">Personal Projects</h3>
+                <p className="">
+                  The best way to learn a new technology is to build something
+                  with it. I like to build projects on my own using technology
+                  that interests me.
+                </p>
               </div>
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
-              </h3>
-              <p className="py-2">Llorum Llorum yououoiujiuouiouoiuojo</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">one</p>
-              <p className="text-gray-800 py-1">two</p>
-              <p className="text-gray-800 py-1">three</p>
+              <div className="basis-1/3">
+                <h4 className=" text-teal-600">Tools used</h4>
+                <p className="text-gray-800">
+                  Typescript, Javascript, NextJs, React, Vercel, Clerk
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
+              <div className="mx-auto basis-1/3">
+                <Image
+                  src={universityArkansas}
+                  objectFit="contain"
+                  alt="meaningful"
+                />
+              </div>
+              <div className="basis-1/3">
+                <h3 className="text-lg font-medium pt-8 pb-2">
+                  University of Arkansas
+                </h3>
+              </div>
+              <div className="basis-1/3">
+                <p className="py-2">Bachelor&apos;s Degree</p>
+                <p className="text-gray-800 py-1">Computer Science</p>
+                <p className="text-gray-800 py-1">ACM President</p>
+                <p className="text-gray-800 py-1"></p>
+              </div>
             </div>
           </div>
         </section>
