@@ -101,7 +101,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="basis-1/3">
-                <h4 className="py-4 text-teal-600">Tools Used</h4>
+                <h4 className="text-teal-600">Tools Used</h4>
                 <p className="text-gray-800 py-1">
                   Java, Jax-RS, Maven, Oracle DB, Git
                 </p>
@@ -113,14 +113,14 @@ export default function Home() {
               </div>
               <div className="basis-1/3">
                 <h3 className="text-lg font-medium">Personal Projects</h3>
-                <p className="">
+                <p>
                   The best way to learn a new technology is to build something
                   with it. I like to build projects on my own using technology
                   that interests me.
                 </p>
               </div>
               <div className="basis-1/3">
-                <h4 className=" text-teal-600">Tools used</h4>
+                <h4 className="text-teal-600">Tools used</h4>
                 <p className="text-gray-800">
                   Typescript, Javascript, NextJs, React, Vercel, Clerk
                 </p>
