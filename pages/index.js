@@ -7,7 +7,7 @@ import avatar from "../public/avatar.jpg";
 import OCLogo from "../public/OC_logo.png";
 import code from "../public/code.png";
 import universityArkansas from "../public/UniversityArkansasLogo.png";
-import web1 from "../public/web1.png";
+import web1 from "../public/web1.jpg";
 import { useState } from "react";
 import Link from "next/link";
 
