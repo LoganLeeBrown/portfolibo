@@ -44,7 +44,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-left p-10 m-10 shadow-xl rounded-xl bg-[#97CAEF] dark:bg-[#45A29E]">
-            <h2 className="text-5xl py-3 text-[#CAFAFE] bg:text-[#66FCF1] font-extrabold md:text-6xl">
+            <h2 className="text-3xl py-3 text-[#CAFAFE] bg:text-[#66FCF1] font-extrabold md:text-6xl">
               Logan Brown
             </h2>
             <h3 className="text-2xl font-bold md:text-3xl py-2">
