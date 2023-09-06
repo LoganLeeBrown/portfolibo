@@ -147,7 +147,7 @@ export default function Home() {
             <div className="basis-1/3 relative">
               <Link href="https://chirp-ten-henna.vercel.app/">
                 <div className="absolute h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 rounded-lg">
-                  <span className="absolute my-4 mx-4 text-black bg-white bg-opacity-50 rounded-full px-2 font-medium">
+                  <span className="absolute my-4 mx-4 text-black bg-white bg-opacity-50 rounded-full px-2 font-medium md:text-xl">
                     Chirp
                   </span>
                 </div>
