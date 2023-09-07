@@ -10,6 +10,7 @@ import universityArkansas from "../public/UniversityArkansasLogo.png";
 import web1 from "../public/web1.jpg";
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,7 +44,12 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-left p-10 m-10 shadow-xl rounded-xl bg-[#97CAEF] dark:bg-[#45A29E]">
+          <motion.div
+            transition={{ delay: 1, ease: "easeOut" }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="text-left p-10 m-10 shadow-xl rounded-xl bg-[#97CAEF] dark:bg-[#45A29E]"
+          >
             <h2 className="text-3xl py-3 text-[#CAFAFE] bg:text-[#66FCF1] font-extrabold md:text-6xl">
               Logan Brown
             </h2>
@@ -56,7 +62,7 @@ export default function Home() {
               build creative and powerful products that improve the user
               experience.
             </p>
-          </div>
+          </motion.div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300">
             <Link href="https://www.linkedin.com/in/logan-lee-brown/">
               <AiFillLinkedin />
