@@ -34,7 +34,7 @@ export default function Home() {
                   className="cursor-pointer text-2xl"
                 />
               </li>
-              <li>
+              <li className="hover:scale-105 duration-300 ease-in-out">
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   href="Resume"
@@ -48,20 +48,21 @@ export default function Home() {
             transition={{ delay: 1, ease: "easeOut" }}
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-left p-10 m-10 shadow-xl rounded-xl bg-[#97CAEF] dark:bg-[#45A29E]"
           >
-            <h2 className="text-3xl py-3 text-[#CAFAFE] bg:text-[#66FCF1] font-extrabold md:text-6xl">
-              Logan Brown
-            </h2>
-            <h3 className="text-2xl font-bold md:text-3xl py-2">
-              Full Stack Developer
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg">
-              I am a creative software engineer with multiple years of
-              experience in industry leading software environments. I like to
-              build creative and powerful products that improve the user
-              experience.
-            </p>
+            <div className="hover:scale-105 duration-300 ease-in-out text-left p-10 m-10 shadow-xl rounded-xl bg-[#97CAEF] dark:bg-[#45A29E]">
+              <h2 className="text-3xl py-3 text-[#CAFAFE] bg:text-[#66FCF1] font-extrabold md:text-6xl">
+                Logan Brown
+              </h2>
+              <h3 className="text-2xl font-bold md:text-3xl py-2">
+                Full Stack Developer
+              </h3>
+              <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg">
+                I am a creative software engineer with multiple years of
+                experience in industry leading software environments. I like to
+                build creative and powerful products that improve the user
+                experience.
+              </p>
+            </div>
           </motion.div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300">
             <Link href="https://www.linkedin.com/in/logan-lee-brown/">
@@ -71,7 +72,7 @@ export default function Home() {
               <AiFillGithub />
             </Link>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mb-10 md:h-96 md:w-96 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mb-10 md:h-96 md:w-96 overflow-hidden hover:scale-105 duration-300 ease-in-out">
             <Image
               src={avatar}
               layout="fill"
@@ -93,7 +94,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10 lg:justify-center">
-            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
+            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3 hover:scale-105 duration-300 ease-in-out">
               <div className="mx-auto basis-1/3">
                 <Image src={OCLogo} alt="meaningful" objectFit="contain" />
               </div>
@@ -113,7 +114,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
+            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3 hover:scale-105 duration-300 ease-in-out">
               <div className="basis-1/3">
                 <Image src={code} objectFit="contain" alt="meaningful" />
               </div>
@@ -132,7 +133,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3">
+            <div className="flex flex-col text-center shadow-xl p-10 rounded-xl my-10 bg-white basis-1/3 hover:scale-105 duration-300 ease-in-out">
               <div className="mx-auto basis-1/3">
                 <Image
                   src={universityArkansas}
@@ -162,7 +163,7 @@ export default function Home() {
             </h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap sm:flex-1">
-            <div className="basis-1/3 relative">
+            <div className="basis-1/3 relative hover:scale-105 duration-300 ease-in-out">
               <Link href="https://chirp-ten-henna.vercel.app/">
                 <div className="absolute h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 rounded-lg">
                   <span className="absolute my-4 mx-4 text-black bg-white bg-opacity-50 rounded-full px-2 font-medium md:text-xl">
